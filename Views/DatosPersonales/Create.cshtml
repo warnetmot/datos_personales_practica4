@@ -11,6 +11,9 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
+        <footer>
+
+        </footer>
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -38,22 +41,13 @@
                 <input asp-for="Carnet" class="form-control" />
                 <span asp-validation-for="Carnet" class="text-danger"></span>
             </div>
+            
             <div class="form-group">
                 <label asp-for="Expededo" class="control-label"></label>
-                <select asp-for="Expededo" class="form-control">
-                    <option value="-">Ingrese un departamento</option>
-                    <option value="Potosi">Potosi</option>
-                    <option value="Chuquisaca">Chuquisaca</option>
-                    <option value="La paz">La paz</option>
-                    <option value="Beni">Beni</option>
-                    <option value="Pando">Pando</option>
-                    <option value="Santa Cruz">Santa Cruz</option>
-                    <option value="Cochabamba">Cochabamba</option>
-                    <option value="Oruro">Oruro</option>
-                  
-                </select>
+                <input asp-for="Expededo" type="date" class="form-control" />
                 <span asp-validation-for="Expededo" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Direccion" class="control-label"></label>
                 <input asp-for="Direccion" class="form-control" />
